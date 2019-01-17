@@ -1,7 +1,7 @@
 # A* search
 Consider the follow graph:
 
-![a*_search](../images/a_star_search.jpeg)
+![a*_search](./images/a_star_search.jpeg)
 
 The numbers in red are the heuristic values
 
@@ -164,7 +164,7 @@ Z | - | 25 | 0 | 25 | F
 
 Can you reproduce the steps that gave the following results for the given graph?
 
-![a*_search](../images/assignment.jpeg)
+![a*_search](./images/assignment.jpeg)
 
 Node | Status | Shortest distance from A (g(x)) | Heuristic distance to Z (h(x)) | Total distance (g(x) + h(x)) | Previous node
 --- | --- | --- | ---- | ----| ---
