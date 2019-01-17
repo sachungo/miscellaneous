@@ -1,7 +1,7 @@
 # Depth-first search
 Consider the following graph:
 
-// TODO: Insert the graph image
+![dfs](../images/bfs_dfs.jpeg)
 
 The adjacency list representation of the graph is:
 Node | Adjacency list
@@ -22,7 +22,7 @@ To traverse the graph in a depthwise motion:
 ## How is the traversal done?
 Revisiting our graph:
 
-// TODO: graph
+![dfs](../images/bfs_dfs.jpeg)
 
 How is the graph traversed depthward?
 

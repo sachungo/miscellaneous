@@ -1,7 +1,7 @@
 # Breadth-first Search
 Consider the following graph:
 
-// TODO: Insert the graph image
+![bfs](../images/bfs_dfs.jpeg)
 
 The above graph can be represented using either:
 * adjacency list
@@ -41,7 +41,7 @@ A queue data structure is used in order to retrieve the next vertex to be used f
 ## How is the traversal done?
 Let's revisit the graph:
 
-// TODO: graph
+![bfs](../images/bfs_dfs.jpeg)
 
 How can the above graph be traversed breadthwise?
 
