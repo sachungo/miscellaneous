@@ -119,6 +119,12 @@ sed G myfile.txt
 # Counts the number of lines in myfile.txt
 sed -n '$=' myfile.txt
 
+# print only lines 5 to 10
+# -n ensures the command only prints the needed lines instead of the whole line
+sed -n 5,10p myfile.txt
+
+# use the -e option to run multiple sed commands
+sed -e 's/this/THAT/g; s/long/LONG/g' myfile
 ```
 
 
