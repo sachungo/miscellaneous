@@ -133,14 +133,6 @@ sed -e 's/this/THAT/g; s/long/LONG/g' myfile
 ## awk
 `awk` is a pattern-directed scanning and processing language
 
-OR
-
-`awk` is a programming language that is used for processing text-based data, either in files or data streams, or using shell pipes
-
-OR
-
-`awk` is a pattern scanning and processing language, which is mostly used as a command line filter to reformat the output of other commands
-
 ```bash
 # print the first word of each line
 awk '{print $1}' myfile.txt
