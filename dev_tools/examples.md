@@ -90,7 +90,9 @@ sed '/coding/d' myfile.txt
 
 #### 3. Insert, append and modify
 Insert uses the `i` flag
+
 Append uses the `a` flag
+
 Modify used the `c` flag
 
 Looking at the man page for sed, insert, append and modify are used in the format of:
