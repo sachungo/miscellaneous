@@ -61,7 +61,7 @@ sed '2s/[A-z]/oooooo/g' myfile.txt
 sed '2,$s/[A-z]/**/g' myfile.txt
 
 # substitute from 3rd to the 6th line
-sed '2,6s/[A-z]/**/g' myfile.txt
+sed '3,6s/[A-z]/**/g' myfile.txt
 ```
 
 #### 2. Delete
