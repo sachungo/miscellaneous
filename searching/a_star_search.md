@@ -152,7 +152,7 @@ E | - | 20 | 5 | 25 | B
 F | visited | 16 | 8 | 24 | C
 Z | - | 25 | 0 | 25 | F
 
-- The remaining nodes are nodes F and Z. However, visiting node E will not lead to a shortee path as its total distance is the same for that node of Z.
+- The remaining nodes are nodes F and Z. However, visiting node E will not lead to a shorter path as its total distance is the same for that node of Z.
 - Therefore, the total distance from **A to Z via F** is `25`.
 - Reading the path from Z to A in the previous column , we have: `Z->F->C->A`
   - B is skipped as node E was not visited
