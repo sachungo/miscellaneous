@@ -67,7 +67,7 @@ sed '3,6s/[A-z]/**/g' myfile.txt
 #### 2. Delete
 ```bash
 # delete the 3rd line from the file
-sed '2d' myfile.txt
+sed '3d' myfile.txt
 
 # delete a range of lines
 sed '2,4d' myfile.txt
