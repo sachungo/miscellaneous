@@ -8,7 +8,6 @@ user=$(whoami)
 echo "${greeting}oooo... $user! It's good to see you again :)"
 
 # numerical operators are: -lt, -gt, -eq, -ne, -le, -ge
-# Arithmetic sum
 if [ $# -eq 0 ]
 then
   echo "Please provide a whole number to get the arithmetic sum"
