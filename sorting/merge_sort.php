@@ -38,7 +38,7 @@ function merge($left_array, $right_array) {
         $left_array = array_slice($left_array, $next_index);
     }
 
-    // // right array remnants
+    // right array remnants
     while(count($right_array) > 0) {
         $result[] = $right_array[$first_index];
         $right_array = array_slice($right_array, $next_index);
