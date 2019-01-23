@@ -47,7 +47,7 @@ F | - | unknown | 8 | - | - | -
 Z | - | unknown | 0 | - | - | -
 
 - Add the distance from A to C (which is the current node), to the distances of the adjacent nodes of C.
-- Only replace the shortest distance when the newly calculated value is smaller than the previous value or if it is unknown. I.e.
+- Only replace the ***shortest distance*** when the newly calculated value is smaller than the previous value or if it is unknown. I.e.
   - C to C is O. `O + 4 = 4` (no need to change)
   - C to E is 17. `17 + 4 = 21`
     - Replace the value as the original one is unknown
@@ -111,7 +111,7 @@ Z | - | unknown | 0 | - | - | -
 - The distance from A to F is 16
 - F to D:
   - `16 + 14 = 30`
-  - `30 > 25` hence no change
+  - `30 > 7` hence no change
 - F to Z:
   - `16 + 9 = 25`
   - `25` cannot be compared to unknown so change the necessary columns
