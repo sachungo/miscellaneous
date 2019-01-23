@@ -42,7 +42,7 @@ echo $mod
 ```
 
 ## sed
-`sed` is a stream editor which is used to perform basic text transformations on an input string.
+`sed` is a stream editor which is used to perform basic text transformations on an input stream.
 
 For example:
 
