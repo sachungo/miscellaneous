@@ -4,6 +4,7 @@ Consider the following graph:
 ![dfs](./images/bfs_dfs.jpeg)
 
 The adjacency list representation of the graph is:
+
 Node | Adjacency list
 ---- | ----
 A | B, C
