@@ -9,7 +9,7 @@ BEGIN {
 	# If file input is not provided to the script, exit the program
 	if (FILENAME == "") {
 		print "Please provide an input file to the script"
-		print "Usage of the script is as: ./awk.sh myfile"
+		print "Usage of the script is as: ./path/to/awk.sh myfile"
 		exit 1
 	}
 
