@@ -158,7 +158,7 @@ Z | - | 25 | 0 | 25 | F
   - B is skipped as node E was not visited
   - A for node D is skipped so it is not included
   - this gives the path of `A->C->F->Z`
-- Therefore, the shortedt path to Z is `A->C->F->Z` with a length of 25
+- Therefore, the shortest path to Z is `A->C->F->Z` with a length of 25
 
 ## Assignment
 
