@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Search box - accessibility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- TODO: style the search box, choose a font, add touch functionality -->
+  <form action="#">
+      <label for="search" class="row__label">Search</label>
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="What are you interested in?"
+      >
+      <button>Search</button>
+  </form>
+
+  <style>
+    form {
+      margin-top: 50px;
+    }
+
+    input {
+      padding: 5px 10px;
+    }
+
+    button {
+      margin-left: 5px;
+    }
+
+    /*
+     * Visually hide the search label but still show it for assistive technology
+     */
+    label {
+      height: 1px;
+      width: 1px;
+      position: absolute;
+      clip-path: rect(0, 0, 0, 0);
+      overflow: hidden;
+    }
+  </style>
+</body>
+</html>

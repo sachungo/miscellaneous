@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form - accessibility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    form {
+      margin: 50px auto;
+      padding: 0 10px;
+      /* width: 500px; */
+    }
+
+    .row {
+      padding-bottom: 10px;
+      display: flex;
+      /* align-items: center; */
+      flex-direction: column;
+    }
+
+    .row__label {
+      /* flex: 0 0 20%; */
+      padding-bottom: 5px;
+    }
+
+   .row__text {
+      flex: 1;
+      height: 25px;
+    }
+
+    .checkbox {
+      padding-bottom: 10px;
+    }
+
+    input[type=checkbox] {
+      margin-right: 10px;
+    }
+
+    input:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: style the input box, use customized checkbox, choose a font, add touch functionality -->
+  <form action="#">
+    <div class="row">
+      <label for="name" class="row__label">Full name</label>
+      <input
+        type="text"
+        id="name"
+        name="fullname"
+        class="row__text"
+        placeholder="Your Name"
+      >
+    </div>
+
+    <div class="row">
+      <label for="email" class="row__label">Email address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="row__text"
+        placeholder="example@example.com"
+      >
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" name="subscribe" id="subscribe">
+      <label for="subscribe">Send me weekly updates</label>
+    </div>
+  </form>
+</body>
+</html>
