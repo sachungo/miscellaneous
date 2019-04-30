@@ -8,6 +8,16 @@
 </head>
 <body>
   <!-- TODO: style the search box, choose a font, add touch functionality -->
+  <!--
+    NOTE: You can also use `aria-label` or `aria-labelledby` and omit the <label> tag.
+    For example:
+     <input type="text" name="search" aria-label="Search">
+     <button type="submit">Search</button>
+
+     OR
+     <input type="text" name="search" aria-labelledby="searchbutton">
+     <button type="submit" id="searchbutton">Search</button>
+  -->
   <form action="#">
       <label for="search" class="row__label">Search</label>
       <input
@@ -33,7 +43,9 @@
     }
 
     /*
-     * Visually hide the search label but still show it for assistive technology
+     * Using `display: none` and `visibility: hidden` will hide the elements even for
+     * assistive technology. Therefore, use the following CSS to visually hide the
+     * label for normal users but technically visible for assistive technology.
      */
     label {
       height: 1px;
