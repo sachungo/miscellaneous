@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grouping Controls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- Using `fieldset` and `legend` for grouping -->
+  <fieldset>
+    <legend>File output format</legend>
+    <div>
+      <input type="radio" name="output_format" id="text" value="text">
+      <label for="text">text file</label>
+    </div>
+    <div>
+      <input type="radio" name="output_format" id="csv" value="csv">
+      <label for="csv">csv file</label>
+    </div>
+    <div>
+      <input type="radio" name="output_format" id="pdf" value="pdf">
+      <label for="pdf">pdf file</label>
+    </div>
+    <div>
+      <input type="radio" name="output_format" id="rtf" value="rtf">
+      <label for="rtf">rtf file</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>A checkbox group</legend>
+    <div>
+      <input type="checkbox" name="newsletter" id="news">
+      <label for="news">Weekly newsletter</label>
+    </div>
+    <div>
+      <input type="checkbox" name="email" id="email">
+      <label for="email">Weekly email</label>
+    </div>
+  </fieldset>
+
+  <!-- Using `role=group` and `aria-labelledby` for grouping -->
+  <div role="group" arial-labelledby="address">
+    <div id="address">Delivery address</div>
+    <div>
+      <input type="text" name="street" id="street">
+      <label for="street">Street Name: </label>
+    </div>
+    <div>
+      <input type="text" name="city" id="city">
+      <label for="city">City: </label>
+    </div>
+  </div>
+
+  <!-- Grouping select tag options using `optgroup` -->
+  <label for="subjects">Available school subjects</label>
+  <select name="subject" id="subjects">
+    <option value="">Choose a subject</option>
+    <optgroup label="Science subjects">
+      <option value="math">Math</option>
+      <option value="biology">Biology</option>
+      <option value="physics">Physics</option>
+      <option value="chemistry">Chemistry</option>
+    </optgroup>
+    <optgroup label="Language subjects">
+      <option value="swahili">Kiswahili</option>
+      <option value="english">English</option>
+      <option value="german">German</option>
+    </optgroup>
+    <optgroup label="Religious subjects">
+      <option value="christian">C.R.E</option>
+      <option value="islam">Islam</option>
+      <option value="hindu">Hindu</option>
+    </optgroup>
+  </select>
+</body>
+
+<style>
+  label {
+    text-transform: capitalize;
+  }
+
+  [role="group"] {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  select {
+    display: block;
+  }
+</style>
+</html>
